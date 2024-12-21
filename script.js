@@ -1,19 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Add hover effect for social icons
     const socialIcons = document.querySelectorAll('.social-links a');
 
-    socialIcons.forEach(icon => {
-        icon.addEventListener('mouseover', () => {
-            icon.style.transform = 'scale(1.2)';
-            icon.style.transition = 'transform 0.3s';
-        });
-
-        icon.addEventListener('mouseout', () => {
-            icon.style.transform = 'scale(1)';
-        });
-    });
-
-    // Tooltips
+    // Tooltip functionality
     socialIcons.forEach(icon => {
         icon.addEventListener('mouseover', (e) => {
             const tooltip = document.createElement('span');
@@ -35,4 +23,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
